@@ -132,8 +132,8 @@ if photo: #เงื่อนไขรูปภาพ
 
         if add_data: #กำหนดให้ทำการบันทึกข้อมูลไปยัง CSV
             new_data = {"name": add_name , "gender": gender ,"age": age ,"time": user_time} #กำหนดให้บันทึกคอลัมน์
-            df = df.append(new_data, ignore_index = True)
-            df.to_csv("data/test.csv" , index = False)
+            #df = df.append(new_data, ignore_index = True)
+            #df.to_csv("data/test.csv" , index = False)
             insert_imagesdata(add_name,gender,age,user_time) #รับค่าไปเก็บใน ฐานข้อมูลใน Deta
             st.sidebar.header("บันทึกข้อมูลสำเร็จ")  #แสดงข้อความทางแถบซ้าย
             
